@@ -24,10 +24,7 @@ struct ContentView: View {
             .background(textColor)
             .cornerRadius(self.isShowing ? 40 : 50)
             .onTapGesture {
-                if(!self.isShowing){
-                    self.isShowing.toggle()
-                }
-                
+                self.isShowing.toggle()
         }
         .overlay(
             ZStack {
